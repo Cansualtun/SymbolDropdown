@@ -57,32 +57,33 @@ const DropdownMenu = ({ name, title }) => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-[20px] z-50 w-72 text-"
+            className="absolute left-0 top-full mt-4 bg-white shadow-lg rounded-[20px] z-50 w-72"
+            // Added mt-4 to increase the gap between the button and dropdown
           >
             <ul>
               {menuItems.map((item, index) => (
-              <li
-              key={index}
-              className="flex justify-between items-center px-2 py-2 m-[7px] hover:bg-[#F6F7F9] hover:rounded-md hover:m-[7px] cursor-pointer group hover:font-medium"
-            >
-              <div className="flex items-center space-x-3">
-                <div
-                  className="w-[15px] h-[15px] bg-[#848588] group-hover:bg-black ml-[6px]"
-                  style={{
-                    maskImage: `url(${item.icon})`,
-                    WebkitMaskImage: `url(${item.icon})`,
-                    maskSize: "cover",
-                    WebkitMaskSize: "cover",
-                  }}
-                ></div>
-                <span className="text-[#848588] font-light group-hover:text-black group-hover:font-medium">
-                  {item.label}
-                </span>
-              </div>
-              <span className="text-[#848588] font-light !text-sm group-hover:text-[#475467]">
-                {item.shortcut}
-              </span>
-            </li>
+                <li
+                  key={index}
+                  className="flex justify-between items-center px-2 py-2 m-[7px] hover:bg-[#F6F7F9] hover:rounded-md hover:m-[7px] cursor-pointer group hover:font-medium"
+                >
+                  <div className="flex items-center space-x-3">
+                    <div
+                      className="w-[15px] h-[15px] bg-[#848588] group-hover:bg-black ml-[6px]"
+                      style={{
+                        maskImage: `url(${item.icon})`,
+                        WebkitMaskImage: `url(${item.icon})`,
+                        maskSize: "cover",
+                        WebkitMaskSize: "cover",
+                      }}
+                    ></div>
+                    <span className="text-[#848588] font-light group-hover:text-black group-hover:font-medium">
+                      {item.label}
+                    </span>
+                  </div>
+                  <span className="text-[#848588] font-light !text-sm group-hover:text-[#475467]">
+                    {item.shortcut}
+                  </span>
+                </li>
               ))}
             </ul>
           </motion.div>
