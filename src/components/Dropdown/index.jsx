@@ -58,21 +58,21 @@ const DropdownMenu = ({ name, title }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             className="absolute left-0 top-full mt-4 bg-white shadow-lg rounded-[20px] z-50 w-72"
-            // Added mt-4 to increase the gap between the button and dropdown
           >
             <ul>
               {menuItems.map((item, index) => (
                 <li
                   key={index}
-                  className="flex justify-between items-center px-2 py-2 m-[7px] hover:bg-[#F6F7F9] hover:rounded-md hover:m-[7px] cursor-pointer group hover:font-medium"
+                  className="flex justify-between items-center px-2 py-2 m-[7px] hover:bg-[#F6F7F9] hover:rounded-[12px] hover:m-[7px] cursor-pointer group hover:font-medium"
                 >
                   <div className="flex items-center space-x-3">
                     <div
-                      className="w-[15px] h-[15px] bg-[#848588] group-hover:bg-black ml-[6px]"
+                      className="w-[16px] h-[16px] bg-[#848588] group-hover:bg-black ml-[6px]"
                       style={{
                         maskImage: `url(${item.icon})`,
                         WebkitMaskImage: `url(${item.icon})`,
-                        maskSize: "cover",
+                        maskSize: 16,
+                        maskRepeat: "no-repeat",
                         WebkitMaskSize: "cover",
                       }}
                     ></div>
