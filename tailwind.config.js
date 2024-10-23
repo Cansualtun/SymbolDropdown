@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'pp-neue-montreal': ['PP Neue Montreal', 'sans-serif'],
+    },
   },
   plugins: [],
 }
