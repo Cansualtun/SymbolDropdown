@@ -28,7 +28,7 @@ const DropdownMenu = ({ name, title }) => {
         className="flex items-center bg-white shadow-md rounded-[20px] p-3 w-72"
       >
         <div className="bg-[#E6D4FF] text-[#6832B1] font-normal text-lg rounded-md w-10 h-10 flex items-center justify-center">
-          DV
+          JS
         </div>
         <div className="text-left ml-2">
           <div className="font-normal">{name}</div>
