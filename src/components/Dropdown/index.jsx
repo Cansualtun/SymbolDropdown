@@ -22,7 +22,7 @@ const DropdownMenu = ({ name, title }) => {
   ];
 
   return (
-    <div className="relative w-60">
+    <div className="relative w-60 mt-10">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center bg-white shadow-md rounded-[20px] p-3 w-72"
